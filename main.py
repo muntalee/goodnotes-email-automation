@@ -11,7 +11,7 @@ load_dotenv()
 GMAIL_USER = os.getenv("GMAIL_USER")
 GMAIL_PASSWD = os.getenv("GMAIL_PASSWD")
 GOODNOTES_MAIL = os.getenv("GOODNOTES_MAIL")
-EXPORT_DIR = "/Users/munta/goodnotes"
+EXPORT_DIR = os.getenv("EXPORT_DIR")
 
 # check for file in hasImported.txt file
 def hasImported(fileName):
